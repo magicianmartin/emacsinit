@@ -22,8 +22,12 @@
 		       window-numbering
 		       molokai-theme
 		       elpy
+		       flycheck
 		       plantuml-mode
-		       ace-jump-mode))
+		       ace-jump-mode
+		       helm
+		       projectile
+		       helm-projectile))
 
 (setq package-selected-packages cyw/packages)
 

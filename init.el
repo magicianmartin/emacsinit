@@ -7,4 +7,7 @@
 (require 'init-themes)
 (require 'init-which-key)
 (require 'init-window-number)
+(require 'init-projectile)
+
+
 (require 'init-elpy)
