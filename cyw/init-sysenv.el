@@ -1,14 +1,16 @@
 
 
+;;; Code:
 ;; 中英文字体设置
-;; Setting English Font
-;; (set-face-attribute 'default nil :font "Consolas 12")
-;; Setting Chinese Font
-;; (dolist (charset '(kana han symbol cjk-misc bopomofo))
-;;   (set-fontset-font (frame-parameter nil 'font)
-;; 		    charset (font-spec :family "微软雅黑" :size 18)))
-;; 		    ;;charset (font-spec :family "Microsoft Yahei" :size 16)))
+(when (eq system-type 'windows-nt)
+  ;; Setting English Font
+  (set-face-attribute 'default nil :font "Consolas 12")
+  ;; Setting Chinese Font
+  (dolist (charset '(kana han symbol cjk-misc bopomofo))
+    (set-fontset-font (frame-parameter nil 'font)
+		      charset (font-spec :family "微软雅黑" :size 18))))
 
+  
 ;; 关闭启动提示
 (setq inhibit-splash-screen t)
 ;; 设置toolbar的显示和隐藏，当参数是负数时隐藏toolbar，其它则显示toolbar
