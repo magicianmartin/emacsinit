@@ -7,6 +7,8 @@
 (require 'init-themes)
 (require 'init-which-key)
 (require 'init-window-number)
+
+(require 'init-helm)
 (require 'init-projectile)
 
 

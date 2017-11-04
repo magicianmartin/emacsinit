@@ -18,7 +18,8 @@
 ;; install packages
 (defvar cyw/packages '(
 		       which-key
-		       smex
+		       ;;; 使用了helm以后，就可以不使用smex了
+		       ;;; smex
 		       window-numbering
 		       molokai-theme
 		       elpy
