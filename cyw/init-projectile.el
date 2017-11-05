@@ -13,7 +13,9 @@
 (helm-projectile-on)
 
 ;;; 明确使用外部索引工具，linux系统中默认即是
-;;; (setq projectile-indexing-method 'alien)
+(when (eq system-type 'windows-nt)
+  (setq projectile-indexing-method 'alien)
+  )
 
 ;;; 设置切换project后默认执行命令
 (setq projectile-switch-project-action 'helm-projectile-find-file)
