@@ -1,3 +1,7 @@
+;;; package --- init
+;;; Commentary:
+;;; Code:
+
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/cyw/")
@@ -11,5 +15,8 @@
 (require 'init-helm)
 (require 'init-projectile)
 
-
+(require 'init-flycheck)
 (require 'init-elpy)
+
+
+;;; init ends here
