@@ -1,4 +1,5 @@
 *.swp
 elpa/
 projectile-bookmarks.eld
-
+auto-save-list/
+projectile.cache
