@@ -1,13 +1,18 @@
+;;; package --- init-packages
+;;; Commentary:
 (require 'package) ;; You might already have this line
 ;; 使用稳定版的MELPA
 ;; (add-to-list 'package-archives
 ;;              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;;; code:
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/"))
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
+;;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+;;;                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 ;; elpy image+ plantuml-mode which-key smex window-numbering helm ace-jump-mode
 
@@ -20,15 +25,18 @@
 		       which-key
 		       ;;; 使用了helm以后，就可以不使用smex了
 		       ;;; smex
+		       projectile
+		       helm
+		       helm-projectile
 		       window-numbering
 		       molokai-theme
 		       elpy
 		       flycheck
 		       plantuml-mode
 		       ace-jump-mode
-		       helm
-		       projectile
-		       helm-projectile))
+		       magit
+		       magit-gerrit
+		       ))
 
 (setq package-selected-packages cyw/packages)
 
@@ -46,3 +54,4 @@
 
 
 (provide 'init-packages)
+;;; init-packages ends here

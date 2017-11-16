@@ -14,6 +14,7 @@
 
 (require 'init-helm)
 (require 'init-projectile)
+(require 'init-magit)
 
 (require 'init-flycheck)
 (require 'init-elpy)
