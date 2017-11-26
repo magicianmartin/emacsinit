@@ -19,6 +19,8 @@
 ;; cl - common lisp extension
 (require 'cl)
 
+;; compile the not compiled el
+(byte-recompile-directory (expand-file-name "~/.emacs.d/elpa") 0)
 
 ;; install packages
 (defvar cyw/packages '(

@@ -37,10 +37,6 @@
 (prefer-coding-system 'utf-8-unix)
 ;; (set-buffer-file-coding-system 'unix)
 
-;; orgmode中文本语法高亮
-(setq org-src-fontify-natively t)
-
-
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 (provide 'init-sysenv)

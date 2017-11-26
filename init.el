@@ -12,12 +12,14 @@
 (require 'init-which-key)
 (require 'init-window-number)
 
+(require 'init-org)
+
 (require 'init-helm)
 (require 'init-projectile)
 (require 'init-magit)
 
 (require 'init-flycheck)
 (require 'init-elpy)
-
+(require 'init-visual-line-mode)
 
 ;;; init ends here
