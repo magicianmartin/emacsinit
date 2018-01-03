@@ -1,5 +1,5 @@
-
-
+;;; package --- init-baseenv
+;;; Commentary:
 ;;; Code:
 ;; 中英文字体设置
 (when (eq system-type 'windows-nt)
@@ -39,4 +39,5 @@
 
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
-(provide 'init-sysenv)
+(provide 'init-baseenv)
+;;; init-baseenv ends here

@@ -6,7 +6,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/cyw/")
 
-(require 'init-sysenv)
+(require 'init-baseenv)
 (require 'init-packages)
 (require 'init-themes)
 (require 'init-which-key)
@@ -21,6 +21,5 @@
 
 (require 'init-flycheck)
 (require 'init-elpy)
-(require 'init-visual-line-mode)
 
 ;;; init ends here
