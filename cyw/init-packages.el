@@ -27,9 +27,12 @@
 		       which-key
 		       ;;; 使用了helm以后，就可以不使用smex了
 		       ;;; smex
-		       projectile
+		       counsel
+		       swiper
+		       counsel-projectile
 		       helm
 		       helm-projectile
+		       projectile
 		       window-numbering
 		       molokai-theme
 		       elpy
@@ -38,6 +41,8 @@
 		       ace-jump-mode
 		       magit
 		       magit-gerrit
+		       highlight-symbol
+		       highlight-parentheses
 		       ))
 
 (setq package-selected-packages cyw/packages)

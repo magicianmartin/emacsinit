@@ -6,7 +6,7 @@
 ;;; /home/martin/.virtualenvs
 (pyvenv-workon "uwsgi")
 
-;;; elpy的代码浏览功能需要使用其它的库，例如rope。需要在python环境中安装其所使用的库。
+;;; elpy的代码浏览功能需要使用其它的库，例如rope, jedi。需要在python环境中安装其所使用的库。
 
 
 (provide 'init-elpy)

@@ -14,7 +14,8 @@
 
 (require 'init-org)
 
-(require 'init-helm)
+(require 'init-counsel)
+;; (require 'init-helm)
 (require 'init-projectile)
 (require 'init-magit)
 
