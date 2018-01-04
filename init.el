@@ -13,7 +13,8 @@
 (require 'init-window-number)
 
 (require 'init-org)
-
+(require 'init-highlight-symbol)
+(require 'init-highlight-parentheses)
 (require 'init-counsel)
 ;; (require 'init-helm)
 (require 'init-projectile)
