@@ -23,4 +23,5 @@
 (require 'init-flycheck)
 (require 'init-elpy)
 
+(require 'init-custom)
 ;;; init ends here
