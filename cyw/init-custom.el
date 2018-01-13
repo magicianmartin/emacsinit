@@ -11,12 +11,13 @@
   (lower-frame)
   (setq img-name
         (concat (make-temp-name "img-") ".png"))
-  (shell-command (concat "i_view32 /capture=4 /convert=" ".\\img\\" (format "%s" img-name)))
+  (call-process "i_view32" nil nil nil (format "/capture=4 /convert=.\\img\\%s" img-name))
+  ;; (shell-command (concat "i_view32 /capture=4 /convert=" ".\\img\\" (format "%s" img-name)))
   (insert (concat "[[./img/" img-name "]]"))
   (shell-command (format "mspaint .\\img\\%s" img-name))
   )
 
-;; (with-eval-after-load 'org-mode (define-key org-mode-map (kbd "C-c r") 'chuyw-capture-screen))
+(with-eval-after-load 'org (define-key org-mode-map (kbd "C-c r") 'chuyw-capture-screen))
 
 (provide 'init-custom)
 ;;; init-custom ends here

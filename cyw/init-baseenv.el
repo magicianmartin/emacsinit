@@ -37,6 +37,10 @@
 (prefer-coding-system 'utf-8-unix)
 ;; (set-buffer-file-coding-system 'unix)
 
+;; 换行的设置
+(setq truncate-partial-width-windows nil)
+(add-to-list 'prog-mode-hook (lambda () (setq truncate-lines t)))
+
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 (provide 'init-baseenv)
