@@ -19,7 +19,9 @@
   (with-eval-after-load 'org (define-key org-mode-map (kbd "C-c r") 'chuyw-capture-screen))
   )
 
-(when (not (eq nil window-system))
+;; 
+(when (display-graphic-p)
+;; (when (not (eq nil window-system))
   (chuyw-init-capture-screen))
 
 (provide 'init-custom)
