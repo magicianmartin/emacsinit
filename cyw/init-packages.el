@@ -35,6 +35,7 @@
 		       projectile
 		       window-numbering
 		       molokai-theme
+		       zenburn-theme
 		       elpy
 		       flycheck
 		       plantuml-mode
