@@ -5,11 +5,16 @@
 (when (eq system-type 'windows-nt)
   ;; Setting English Font
   (set-face-attribute 'default nil :font "Consolas 12")
+  ;; (set-face-attribute 'default nil :font "Courier New 12")
   ;; Setting Chinese Font
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
-		      charset (font-spec :family "微软雅黑" :size 18))))
-
+  		      charset (font-spec :family "微软雅黑")))
+  (setq chinese-fonts-scale 1.2)
+  (setq face-font-rescale-alist `(("Microsoft Yahei" . ,chinese-fonts-scale)
+                                  ("Microsoft_Yahei" . ,chinese-fonts-scale)
+                                  ("微软雅黑" . ,chinese-fonts-scale)
+                                  ("WenQuanYi Zen Hei" . ,chinese-fonts-scale))))
   
 ;; 关闭启动提示
 (setq inhibit-splash-screen t)
