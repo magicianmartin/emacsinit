@@ -5,7 +5,7 @@
 (when (eq system-type 'windows-nt)
   ;; Setting English Font
   (set-face-attribute 'default nil :font "Consolas 12")
-  ;; (set-face-attribute 'default nil :font "Courier New 12")
+  ;; (set-face-attribute 'default nil :font "Lucida Console 12")
   ;; Setting Chinese Font
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
@@ -38,6 +38,8 @@
 ;; 关闭自动保存文件
 (setq auto-save-default nil)
 
+;; 设置系统语言环境
+(set-language-environment 'Chinese-GB18030)
 ;; 设置系统文件格式和字符集
 (prefer-coding-system 'utf-8-unix)
 ;; (set-buffer-file-coding-system 'unix)
