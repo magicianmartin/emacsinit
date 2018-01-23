@@ -1,12 +1,14 @@
 ;;; package --- init-packages
 ;;; Commentary:
+;;; code:
 (require 'package) ;; You might already have this line
 ;; 使用稳定版的MELPA
 ;; (add-to-list 'package-archives
 ;;              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-;;; code:
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/"))
+;; (add-to-list 'package-archives
+;;             '("melpa" . "http://melpa.org/packages/"))
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
