@@ -48,6 +48,11 @@
 (setq truncate-partial-width-windows nil)
 (add-to-list 'prog-mode-hook (lambda () (setq truncate-lines t)))
 
+;; Tabs, Space, Indentation Setup
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
+;; 
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 (provide 'init-baseenv)
