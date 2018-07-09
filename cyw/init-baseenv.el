@@ -2,9 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 ;; 中英文字体设置
-(when (eq system-type 'windows-nt)
+;; (when (eq system-type 'windows-nt)
+(when (display-graphic-p)
   ;; Setting English Font
-  (set-face-attribute 'default nil :font "Consolas 12")
+  (set-face-attribute 'default nil :font "Consolas 16")
   ;; (set-face-attribute 'default nil :font "Lucida Console 12")
   ;; Setting Chinese Font
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
