@@ -5,13 +5,14 @@
 ;; (when (eq system-type 'windows-nt)
 (when (display-graphic-p)
   ;; Setting English Font
-  (set-face-attribute 'default nil :font "Consolas 16")
-  ;; (set-face-attribute 'default nil :font "Lucida Console 12")
+  ;; (set-face-attribute 'default nil :font "Courier New 12")
+  ;; (set-face-attribute 'default nil :font "Consolas 12")
+  (set-face-attribute 'default nil :font "Lucida Console 12")
   ;; Setting Chinese Font
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
-  		      charset (font-spec :family "微软雅黑")))
-  (setq chinese-fonts-scale 1.2)
+  		      charset (font-spec :family "Microsoft YaHei")))
+  (setq chinese-fonts-scale 1.3)
   (setq face-font-rescale-alist `(("Microsoft Yahei" . ,chinese-fonts-scale)
                                   ("Microsoft_Yahei" . ,chinese-fonts-scale)
                                   ("微软雅黑" . ,chinese-fonts-scale)
