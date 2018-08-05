@@ -49,6 +49,7 @@
 ;; 换行的设置
 (setq truncate-partial-width-windows nil)
 (add-to-list 'prog-mode-hook (lambda () (setq truncate-lines t)))
+(add-to-list 'prog-mode-hook (lambda () (hs-minor-mode nil)))
 
 ;; Tabs, Space, Indentation Setup
 (setq-default indent-tabs-mode nil)
