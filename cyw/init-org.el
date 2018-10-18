@@ -11,7 +11,8 @@
 (require 'ox-latex)
 (add-to-list 'org-latex-classes
              '("ctexart"
-               "\\documentclass[11pt, hyperref, UTF8, a4paper]{ctexart}
+               ;; "\\documentclass[11pt, hyperref, UTF8, a4paper]{ctexart}
+               "\\documentclass[hyperref, UTF8, a4paper]{ctexart}
 \\usepackage[colorlinks=true,CJKbookmarks=false,linkcolor=blue,
 urlcolor=blue,menucolor=blue,pdfstartview=FitH]{hyperref}"
                ("\\section{%s}" . "\\section*{%s}")
