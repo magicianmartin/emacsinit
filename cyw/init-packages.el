@@ -26,27 +26,28 @@
 
 ;; install packages
 (defvar cyw/packages '(
-		       which-key
-		       ;;; 使用了helm以后，就可以不使用smex了
-		       ;;; smex
-		       counsel
-		       swiper
-		       counsel-projectile
-		       helm
-		       helm-projectile
-		       projectile
-		       window-numbering
-		       molokai-theme
-		       zenburn-theme
-		       elpy
-		       flycheck
-		       plantuml-mode
-		       ace-jump-mode
-		       magit
-		       magit-gerrit
-		       highlight-symbol
-		       highlight-parentheses
-		       ))
+                       use-package
+                       which-key
+        		       ;;; 使用了helm以后，就可以不使用smex了
+        		       ;;; smex
+                       counsel
+                       swiper
+                       counsel-projectile
+                       helm
+                       helm-projectile
+                       projectile
+                       window-numbering
+                       molokai-theme
+                       zenburn-theme
+                       elpy
+                       flycheck
+                       plantuml-mode
+                       ace-jump-mode
+                       magit
+                       magit-gerrit
+                       highlight-symbol
+                       highlight-parentheses
+                       ))
 
 (setq package-selected-packages cyw/packages)
 

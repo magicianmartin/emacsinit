@@ -2,12 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 ;; 中英文字体设置
-;; (when (eq system-type 'windows-nt)
 (when (display-graphic-p)
   ;; Setting English Font
   ;; (set-face-attribute 'default nil :font "Courier New 12")
   ;; (set-face-attribute 'default nil :font "Consolas 12")
-  (set-face-attribute 'default nil :font "Lucida Console 12")
+  (when (eq system-type 'windows-nt)
+    (set-face-attribute 'default nil :font "Lucida Console 12"))
   ;; Setting Chinese Font
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
@@ -44,7 +44,6 @@
 (set-language-environment 'Chinese-GB18030)
 ;; 设置系统文件格式和字符集
 (prefer-coding-system 'utf-8-unix)
-;; (set-buffer-file-coding-system 'unix)
 
 ;; 换行的设置
 (setq truncate-partial-width-windows nil)

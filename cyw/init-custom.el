@@ -20,8 +20,7 @@
   )
 
 ;; 
-(when (display-graphic-p)
-;; (when (not (eq nil window-system))
+(when (eq system-type 'windows-nt)
   (chuyw-init-capture-screen))
 
 (provide 'init-custom)
