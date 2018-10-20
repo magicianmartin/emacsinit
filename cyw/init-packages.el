@@ -47,6 +47,11 @@
                        magit-gerrit
                        highlight-symbol
                        highlight-parentheses
+                       ;; lsp
+                       lsp-mode
+                       lsp-python
+                       lsp-ui
+                       company-lsp
                        ))
 
 (setq package-selected-packages cyw/packages)
