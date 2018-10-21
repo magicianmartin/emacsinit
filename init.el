@@ -8,7 +8,7 @@
 
 (require 'init-baseenv)
 (require 'init-packages)
-(require 'init-themes)
+;; (require 'init-themes)
 (require 'init-which-key)
 ;; (require 'init-window-number)
 
