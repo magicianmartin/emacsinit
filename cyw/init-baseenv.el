@@ -28,8 +28,9 @@
 (scroll-bar-mode -1)
 ;; 简化确认输入
 (fset 'yes-or-no-p 'y-or-n-p)
-;; 显示行号
-(global-linum-mode)
+;; 显示行号  在emacs26中使用 global-display-line-numbers-mode 代替 global-linum-mode
+(global-display-line-numbers-mode)
+;; (global-linum-mode) ;; 效率太低
 ;; 高亮当前行
 (global-hl-line-mode t)
 ;; 最大化窗口
