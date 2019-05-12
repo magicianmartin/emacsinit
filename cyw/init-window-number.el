@@ -1,7 +1,7 @@
 
 
-(when (package-installed-p 'window-numbering)
+(use-package window-numbering
+  :config
   (window-numbering-mode))
-
 
 (provide 'init-window-number)

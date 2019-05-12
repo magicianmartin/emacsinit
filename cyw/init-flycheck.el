@@ -2,8 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 
+(use-package flycheck
+  :ensure t
 ;;; 全局启用flycheck mode
-(add-hook 'after-init-hook #'global-flycheck-mode)
+  :hook
+  ('after-init . #'global-flycheck-mode)
+  )
 
 
 (provide 'init-flycheck)
