@@ -13,19 +13,18 @@
 (use-package init-themes)
 (use-package init-which-key)
 ;; (use-package init-window-number)
-(use-package init-counsel)
 (use-package init-avy)
-(use-package init-org)
-;; (use-package init-highlight-symbol)
+(use-package init-counsel)
 (use-package init-highlight-parentheses)
 
-;; (use-package init-helm)
-;; (ivy-helpuse-package init-projectile)
+;; (use-package init-highlight-symbol)
+
 (use-package init-magit)
-
 (use-package init-flycheck)
-;; (use-package init-elpy)
 
+;; (use-package init-elpy)
+(use-package init-pylsp)
+(use-package init-org)
 (use-package init-custom)
 ;;; init ends here
 
