@@ -14,6 +14,7 @@
   :config
   ;; If you prefer flycheck and lsp-ui-flycheck is available, (setq lsp-prefer-flymake nil). If set to :none neither of two will be enabled.
   (setq lsp-prefer-flymake nil)
+  (setq lsp-enable-snippet nil)
   )
 
 ;; optionally
