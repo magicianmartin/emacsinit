@@ -4,6 +4,8 @@
 
 (use-package pyvenv
   :ensure t
+  :config
+  (pyvenv-workon "uwsgi")
   )
 
 (use-package lsp-mode
@@ -17,7 +19,11 @@
 ;; optionally
 (use-package lsp-ui
   :ensure t
-  :commands lsp-ui-mode)
+  :commands lsp-ui-mode
+  :config
+  (define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
+  (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
+  )
 (use-package company-lsp
   :ensure t
   :commands company-lsp)
