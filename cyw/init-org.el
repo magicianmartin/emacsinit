@@ -24,7 +24,7 @@
                  "\\documentclass{article}
 \\usepackage{xeCJK}%使用xeCJK宏包处理中文
 \\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,menucolor=blue,%超链接等使用蓝色
-pdfstartview=FitH]{hyperref}%默认输出的PDF文件打开时为适合宽度
+  pdfstartview=FitH]{hyperref}%默认输出的PDF文件打开时为适合宽度
 \\usepackage{indentfirst}%段首缩进需要的宏包
 \\setlength{\\parindent}{2em}%设置段首缩进两个汉字"
                 ("\\section{%s}" . "\\section*{%s}")
@@ -32,6 +32,21 @@ pdfstartview=FitH]{hyperref}%默认输出的PDF文件打开时为适合宽度
                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
+                 ))
+
+  (add-to-list 'org-latex-classes
+               '("cxebook"
+                 "\\documentclass{book}
+\\usepackage{xeCJK}%使用xeCJK宏包处理中文
+\\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,menucolor=black,%超链接等使用黑色
+  pdfstartview=FitH]{hyperref}%默认输出的PDF文件打开时为适合宽度
+\\usepackage{indentfirst}%段首缩进需要的宏包
+\\setlength{\\parindent}{2em}%设置段首缩进两个汉字"
+                 ("\\part{%s}" . "\\part*{%s}")
+                 ("\\chapter{%s}" . "\\chapter*{%s}")
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                  ))
 
   (setq org-latex-default-class "cxeart")
